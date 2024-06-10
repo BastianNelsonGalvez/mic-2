@@ -1,1 +1,37 @@
+.custom-tab-button {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #555; /* Color del texto cuando no está seleccionado */
+}
 
+.custom-tab-icon {
+  font-size: 24px;
+}
+
+.custom-tab-label {
+  font-size: 12px;
+}
+
+/* Estilos para el tab seleccionado */
+.custom-tab-button[aria-selected="true"] {
+  color: #00796b; /* Color del texto e icono cuando está seleccionado */
+  font-weight: bold;
+}
+
+/* Cambiar el color de fondo al teal correspondiente */
+.bg-teal-700 {
+  background-color: #00796b;
+}
+
+ion-tab-button.tab-selected {
+  background-color: #00796b; /* Color de fondo para la pestaña seleccionada */
+  color: #ffffff; /* Color del texto para la pestaña seleccionada */
+}
+
+/* Cambiar el color del icono cuando está seleccionado */
+ion-tab-button.tab-selected .custom-tab-icon {
+  color: #ffffff; /* Color del icono para la pestaña seleccionada */
+}

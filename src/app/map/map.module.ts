@@ -2,10 +2,14 @@ import { IonicModule } from '@ionic/angular';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { Tab3Page } from './tab3.page';
+
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
-import { Tab3PageRoutingModule } from './tab3-routing.module';
+
+
+import { SharedModule } from '../shared/shared.module';
+import { MapPageRoutingModule } from './map-routing.module';
+import { MapPage } from './map.page';
 
 @NgModule({
   imports: [
@@ -13,8 +17,9 @@ import { Tab3PageRoutingModule } from './tab3-routing.module';
     CommonModule,
     FormsModule,
     ExploreContainerComponentModule,
-    Tab3PageRoutingModule
+    MapPageRoutingModule,
+    SharedModule
   ],
-  declarations: [Tab3Page]
+  declarations: [MapPage]
 })
-export class Tab3PageModule {}
+export class MapPageModule {}
