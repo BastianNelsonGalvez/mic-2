@@ -1,17 +1,15 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 2 page"></app-explore-container>
-</ion-content>
+  <app-header></app-header>
+  <div class="flex flex-col items-center justify-center h-full overflow-hidden bg-gray-50">
+    <!-- Contenedor del ícono y texto de advertencia -->
+    <div class="flex flex-col items-center">
+      <!-- Puedes cambiar el nombre del ícono por uno que prefieras de la biblioteca de Ionicons -->
+      <div class="p-3 bg-red-200 rounded-full">
+        <ion-icon name="warning-outline" size="large" class="text-red-500"></ion-icon>
+      </div>
+      <!-- Texto de advertencia -->
+      <div class="mt-4 text-center">
+        <h2 class="text-lg font-semibold text-gray-800">Se requiere calibración</h2>
+        <p class="mt-2 text-sm text-gray-600">Última calibración: 04 de septiembre del 2023</p>
+      </div>
+    </div>

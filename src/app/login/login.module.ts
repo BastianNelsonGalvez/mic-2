@@ -12,4 +12,4 @@ import { TabsPageModule } from '../tabs/tabs.module';
   imports: [IonicModule, CommonModule, FormsModule, LoginRoutingModule,TabsPageModule],
   declarations: [LoginPage],
 })
-export class LoginPageModule {}
+export class LoginModule {}
